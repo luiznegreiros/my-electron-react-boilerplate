@@ -17,6 +17,9 @@
     "email": "luiznegreiros@gmail.com"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/plugin-transform-runtime": "^7.19.6",
@@ -29,6 +32,7 @@
     "@electron-forge/maker-squirrel": "^6.0.5",
     "@electron-forge/maker-zip": "^6.0.5",
     "@electron-forge/plugin-webpack": "^6.0.5",
+    "@types/node": "^18.13.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
@@ -39,7 +43,15 @@
     "css-loader": "^6.0.0",
     "electron": "23.0.0",
     "eslint": "^8.0.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.25.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
     "fork-ts-checker-webpack-plugin": "^7.2.13",
     "node-loader": "^2.0.0",
     "prettier": "^2.8.4",

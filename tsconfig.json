@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "incremental": true,
+    "target": "ES2021",
     "allowJs": true,
     "module": "commonjs",
     "skipLibCheck": true,
@@ -14,7 +15,10 @@
     "paths": {
       "*": ["node_modules/*"]
     },
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ES2021"],
+    "strict": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*", "electron/index.ts"]
+  "include": ["src/**/*", "electron/**/*", "webpack/**/*"]
 }

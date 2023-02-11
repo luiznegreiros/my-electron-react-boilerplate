@@ -1,7 +1,7 @@
-import { HelloWorld } from './components/HelloWorld';
-import { GlobalStyle } from './styles/global-style';
+import GlobalStyle from './styles/global-style';
+import HelloWorld from './components/hello-world';
 
-export function App() {
+function App() {
   return (
     <>
       <GlobalStyle />
@@ -9,3 +9,5 @@ export function App() {
     </>
   );
 }
+
+export default App;

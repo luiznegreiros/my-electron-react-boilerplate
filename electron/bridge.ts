@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import { contextBridge, ipcRenderer } from "electron";
+import { contextBridge, ipcRenderer } from 'electron';
 
 export const electronHandler = {
   /**
@@ -11,7 +11,7 @@ export const electronHandler = {
    */
 
   sendMessage: (message: string) => {
-    ipcRenderer.send("message", message);
+    ipcRenderer.send('message', message);
   },
 
   /**
@@ -22,6 +22,6 @@ export const electronHandler = {
   },
 };
 
-contextBridge.exposeInMainWorld("electron", electronHandler);
+contextBridge.exposeInMainWorld('electron', electronHandler);
 
 export type ElectronHandler = typeof electronHandler;
