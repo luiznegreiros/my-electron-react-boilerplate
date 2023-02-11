@@ -50,30 +50,12 @@
   },
   "settings": {
     "node": {
-      "allowModules": ["express", "electron", "webpack", "@electron-forge/shared-types"]
+      "resolvePaths": ["node_modules/@types"],
+      "allowModules": ["electron", "webpack", "@electron-forge/shared-types"]
     },
     "import/resolver": {
-      "node": {
-        "resolvePaths": [
-          "node_modules/@types"
-        ],
-        "extensions": [
-          ".js",
-          ".ts",
-          ".jsx",
-          ".tsx"
-        ],
-        "tryExtensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
-      },
-      "typescript": {
-        "alwaysTryTypes": true,
-        "project": "./tsconfig.json"
-      }
+      "node": {},
+      "typescript": {}
     },
     "import/parsers": {
       "@typescript-eslint/parser": [
